@@ -1,7 +1,217 @@
-<!doctype html><html lang="sr-Cyrl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5528c9"><meta name="description" content="Besplatne interaktivne lekcije i zadaci iz matematike za 5. razred."><title>MatematikON — Математика за 5. разред</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-<header class="nav wrap"><a class="brand" href="#top"><span>∑</span>Matematik<span>ON</span></a><nav><a href="#oblasti" data-i18n="navLessons">Лекције</a><a href="#vezbanje" data-i18n="navPractice">Вежбање</a></nav><div class="script-switch"><button data-script="cyrl" class="active">Ћир</button><button data-script="latn">Lat</button></div></header>
-<main id="top"><section class="hero wrap"><div><p class="eyebrow" data-i18n="eyebrow">МАТЕМАТИКА ЗА 5. РАЗРЕД</p><h1 data-i18n="heroTitle">Разуми математику.<br><em>Корак по корак.</em></h1><p class="lead" data-i18n="heroText">Кратке лекције, јасни примери и задаци који одмах показују колико знаш.</p><a class="cta" href="#lekcija" data-i18n="start">Започни прву лекцију <span>→</span></a></div><div class="hero-card" aria-hidden="true"><span class="shape circle">5</span><span class="shape triangle">△</span><span class="shape frac">⅔</span><div class="mini-card"><b data-i18n="today">ДАНАШЊИ ИЗАЗОВ</b><strong>24 : 6 = ?</strong><span>4 ✓</span></div></div></section>
-<section id="oblasti" class="section wrap"><div class="section-head"><div><p class="eyebrow" data-i18n="curriculum">ГРАДИВО</p><h2 data-i18n="areasTitle">Изабери област</h2></div><p data-i18n="areasText">Учи својим темпом. Нове лекције додајемо редом.</p></div><div class="topics"><article class="topic live"><span>01</span><div><h3 data-i18n="topic1">Природни бројеви и дељивост</h3><p data-i18n="topic1Text">Бројеви, изрази, дељење и правила дељивости.</p></div><a href="#lekcija">→</a></article><article class="topic"><span>02</span><div><h3 data-i18n="topic2">Скупови</h3><p data-i18n="soon">Ускоро</p></div><b>🔒</b></article><article class="topic"><span>03</span><div><h3 data-i18n="topic3">Разломци</h3><p data-i18n="soon">Ускоро</p></div><b>🔒</b></article><article class="topic"><span>04</span><div><h3 data-i18n="topic4">Геометрија</h3><p data-i18n="soon">Ускоро</p></div><b>🔒</b></article></div></section>
-<section id="lekcija" class="lesson"><div class="wrap lesson-grid"><aside><span data-i18n="lessonLabel">ЛЕКЦИЈА 1</span><div class="progress"><i></i></div><small data-i18n="progress">Комплетна лекција</small></aside><article><p class="eyebrow" data-i18n="unit">ПРИРОДНИ БРОЈЕВИ</p><h2 data-i18n="divTitle">Дељивост природних бројева</h2><p data-i18n="divIntro">Број <b>a</b> је дељив бројем <b>b</b> ако при дељењу нема остатка. Тада је <b>b</b> делилац броја <b>a</b>, а <b>a</b> је садржалац броја <b>b</b>.</p><div class="example"><span data-i18n="example">ПРИМЕР</span><div><strong>24 : 6 = 4</strong><p data-i18n="exampleText">Број 24 је дељив бројем 6. Зато је 6 делилац броја 24, а 24 садржалац броја 6.</p></div></div><h3 data-i18n="rules">Правила дељивости</h3><div class="rules"><div><b>2</b><p data-i18n="rule2">Последња цифра је парна: 0, 2, 4, 6 или 8.</p></div><div><b>3</b><p data-i18n="rule3">Збир цифара је дељив бројем 3.</p></div><div><b>4</b><p data-i18n="rule4">Број који чине последње две цифре дељив је са 4.</p></div><div><b>5</b><p data-i18n="rule5">Последња цифра је 0 или 5.</p></div><div><b>9</b><p data-i18n="rule9">Збир цифара је дељив бројем 9.</p></div><div><b>10</b><p data-i18n="rule10">Последња цифра је 0.</p></div></div><div class="remember"><strong data-i18n="rememberTitle">ЗАПАМТИ</strong><p data-i18n="rememberText">Број 1 дели сваки природан број. Сваки природан број дели самог себе. Број 0 је дељив сваким природним бројем различитим од нуле.</p></div></article></div></section>
-<section id="vezbanje" class="quiz wrap"><div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n="quizTitle">10 интерактивних задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score">0</i>/10</strong></div></div><div id="question-card" class="question-card"><div class="question-meta"><span id="question-number">1 / 10</span><span id="level"></span></div><h3 id="question"></h3><div id="answers" class="answer-grid"></div><p id="feedback" aria-live="polite"></p><button id="next" class="next" hidden></button></div><div id="result" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title"></h2><p id="result-text"></p><button id="restart" class="cta"></button></div></section></main>
-<footer class="wrap"><a class="brand" href="#top"><span>∑</span>Matematik<span>ON</span></a><p data-i18n="footer">Знање расте сваким решеним задатком.</p></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="sr-Cyrl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5528c9">
+<meta name="description" content="Besplatne interaktivne lekcije i zadaci iz matematike za 5. razred.">
+<title>MatematikON — Математика за 5. разред</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav wrap">
+<a class="brand" href="#top">
+<span>∑</span>Matematik<span>ON</span>
+</a>
+<nav>
+<a href="#oblasti" data-i18n="navLessons">Лекције</a>
+<a href="#vezbanje" data-i18n="navPractice">Вежбање</a>
+</nav>
+<div class="script-switch">
+<button data-script="cyrl" class="active">Ћир</button>
+<button data-script="latn">Lat</button>
+</div>
+</header>
+<main id="top">
+<section class="hero wrap">
+<div>
+<p class="eyebrow" data-i18n="eyebrow">МАТЕМАТИКА ЗА 5. РАЗРЕД</p>
+<h1 data-i18n="heroTitle">Разуми математику.<br>
+<em>Корак по корак.</em>
+</h1>
+<p class="lead" data-i18n="heroText">Кратке лекције, јасни примери и задаци који одмах показују колико знаш.</p>
+<a class="cta" href="#lekcija" data-i18n="start">Започни прву лекцију <span>→</span>
+</a>
+</div>
+<div class="hero-card" aria-hidden="true">
+<span class="shape circle">5</span>
+<span class="shape triangle">△</span>
+<span class="shape frac">⅔</span>
+<div class="mini-card">
+<b data-i18n="today">ДАНАШЊИ ИЗАЗОВ</b>
+<strong>24 : 6 = ?</strong>
+<span>4 ✓</span>
+</div>
+</div>
+</section>
+<section id="oblasti" class="section wrap">
+<div class="section-head">
+<div>
+<p class="eyebrow" data-i18n="curriculum">ГРАДИВО</p>
+<h2 data-i18n="areasTitle">Изабери област</h2>
+</div>
+<p data-i18n="areasText">Учи својим темпом. Нове лекције додајемо редом.</p>
+</div>
+<div class="topics">
+<article class="topic live">
+<span>01</span>
+<div>
+<h3 data-i18n="topic1">Природни бројеви и дељивост</h3>
+<p data-i18n="topic1Text">Бројеви, изрази, дељење и правила дељивости.</p>
+</div>
+<a href="#lekcija">→</a>
+</article>
+<article class="topic">
+<span>02</span>
+<div>
+<h3 data-i18n="topic2">Скупови</h3>
+<p data-i18n="soon">Ускоро</p>
+</div>
+<b>🔒</b>
+</article>
+<article class="topic">
+<span>03</span>
+<div>
+<h3 data-i18n="topic3">Разломци</h3>
+<p data-i18n="soon">Ускоро</p>
+</div>
+<b>🔒</b>
+</article>
+<article class="topic">
+<span>04</span>
+<div>
+<h3 data-i18n="topic4">Геометрија</h3>
+<p data-i18n="soon">Ускоро</p>
+</div>
+<b>🔒</b>
+</article>
+</div>
+</section>
+<section class="lesson-picker wrap">
+  <p class="eyebrow" data-i18n2="lessonList">ЛЕКЦИЈЕ У ОБЛАСТИ</p>
+  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a></div>
+</section>
+<section id="lekcija" class="lesson">
+<div class="wrap lesson-grid">
+<aside>
+<span data-i18n="lessonLabel">ЛЕКЦИЈА 1</span>
+<div class="progress">
+<i>
+</i>
+</div>
+<small data-i18n="progress">Комплетна лекција</small>
+</aside>
+<article>
+<p class="eyebrow" data-i18n="unit">ПРИРОДНИ БРОЈЕВИ</p>
+<h2 data-i18n="divTitle">Дељивост природних бројева</h2>
+<p data-i18n="divIntro">Број <b>a</b> је дељив бројем <b>b</b> ако при дељењу нема остатка. Тада је <b>b</b> делилац броја <b>a</b>, а <b>a</b> је садржалац броја <b>b</b>.</p>
+<div class="example">
+<span data-i18n="example">ПРИМЕР</span>
+<div>
+<strong>24 : 6 = 4</strong>
+<p data-i18n="exampleText">Број 24 је дељив бројем 6. Зато је 6 делилац броја 24, а 24 садржалац броја 6.</p>
+</div>
+</div>
+<h3 data-i18n="rules">Правила дељивости</h3>
+<div class="rules">
+<div>
+<b>2</b>
+<p data-i18n="rule2">Последња цифра је парна: 0, 2, 4, 6 или 8.</p>
+</div>
+<div>
+<b>3</b>
+<p data-i18n="rule3">Збир цифара је дељив бројем 3.</p>
+</div>
+<div>
+<b>4</b>
+<p data-i18n="rule4">Број који чине последње две цифре дељив је са 4.</p>
+</div>
+<div>
+<b>5</b>
+<p data-i18n="rule5">Последња цифра је 0 или 5.</p>
+</div>
+<div>
+<b>9</b>
+<p data-i18n="rule9">Збир цифара је дељив бројем 9.</p>
+</div>
+<div>
+<b>10</b>
+<p data-i18n="rule10">Последња цифра је 0.</p>
+</div>
+</div>
+<div class="remember">
+<strong data-i18n="rememberTitle">ЗАПАМТИ</strong>
+<p data-i18n="rememberText">Број 1 дели сваки природан број. Сваки природан број дели самог себе. Број 0 је дељив сваким природним бројем различитим од нуле.</p>
+</div>
+</article>
+</div>
+</section>
+<section id="vezbanje" class="quiz wrap">
+<div class="quiz-head">
+<div>
+<p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p>
+<h2 data-i18n="quizTitle">10 интерактивних задатака</h2>
+<p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p>
+</div>
+<div class="score">
+<span data-i18n="scoreLabel">РЕЗУЛТАТ</span>
+<strong>
+<i id="score">0</i>/10</strong>
+</div>
+</div>
+<div id="question-card" class="question-card">
+<div class="question-meta">
+<span id="question-number">1 / 10</span>
+<span id="level">
+</span>
+</div>
+<h3 id="question">
+</h3>
+<div id="answers" class="answer-grid">
+</div>
+<p id="feedback" aria-live="polite">
+</p>
+<button id="next" class="next" hidden>
+</button>
+</div>
+<div id="result" class="result" hidden>
+<span class="result-icon">∑</span>
+<h2 id="result-title">
+</h2>
+<p id="result-text">
+</p>
+<button id="restart" class="cta">
+</button>
+</div>
+</section>
+<section id="prosti" class="lesson lesson-two">
+  <div class="wrap lesson-grid">
+    <aside><span data-i18n2="lessonLabel">ЛЕКЦИЈА 2</span><div class="progress"><i></i></div><small data-i18n2="complete">Комплетна лекција</small></aside>
+    <article><p class="eyebrow" data-i18n="unit">ПРИРОДНИ БРОЈЕВИ</p><h2 data-i18n2="primeTitle">Прости и сложени бројеви</h2>
+      <p data-i18n2="primeIntro">Природан број већи од 1 је <b>прост</b> ако има тачно два делиоца: број 1 и самог себе. Ако има више од два делиоца, број је <b>сложен</b>.</p>
+      <div class="compare-cards"><div><span data-i18n2="prime">ПРОСТ БРОЈ</span><strong>7</strong><p data-i18n2="seven">Делиоци су 1 и 7. Има тачно два делиоца.</p></div><div><span data-i18n2="composite">СЛОЖЕН БРОЈ</span><strong>12</strong><p data-i18n2="twelve">Делиоци су 1, 2, 3, 4, 6 и 12. Има више од два делиоца.</p></div></div>
+      <h3 data-i18n2="howTitle">Како проверавамо број?</h3><ol class="steps"><li data-i18n2="step1">Проверимо да ли је број већи од 1.</li><li data-i18n2="step2">Тражимо његове делиоце, почевши од 2.</li><li data-i18n2="step3">Ако нема других делилаца осим 1 и самог себе, број је прост.</li></ol>
+      <div class="remember"><strong data-i18n="rememberTitle">ЗАПАМТИ</strong><p data-i18n2="special">Број 1 није ни прост ни сложен. Број 2 је једини паран прост број и уједно најмањи прост број.</p></div>
+      <h3 data-i18n2="firstPrimes">Први прости бројеви</h3><div class="number-row"><b>2</b><b>3</b><b>5</b><b>7</b><b>11</b><b>13</b><b>17</b><b>19</b></div>
+    </article>
+  </div>
+</section>
+<section id="vezbanje-prosti" class="quiz wrap">
+  <div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n2="primeQuiz">Прости и сложени бројеви — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score2">0</i>/10</strong></div></div>
+  <div id="question-card2" class="question-card"><div class="question-meta"><span id="question-number2">1 / 10</span><span id="level2"></span></div><h3 id="question2"></h3><div id="answers2" class="answer-grid"></div><p id="feedback2" aria-live="polite"></p><button id="next2" class="next" hidden></button></div>
+  <div id="result2" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title2"></h2><p id="result-text2"></p><button id="restart2" class="cta"></button></div>
+</section>
+</main>
+<footer class="wrap">
+<a class="brand" href="#top">
+<span>∑</span>Matematik<span>ON</span>
+</a>
+<p data-i18n="footer">Знање расте сваким решеним задатком.</p>
+</footer>
+<script src="app.js">
+</script>
+</body>
+</html>
