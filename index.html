@@ -64,13 +64,13 @@
 </div>
 <a href="#lekcija">→</a>
 </article>
-<article class="topic">
+<article class="topic live">
 <span>02</span>
 <div>
 <h3 data-i18n="topic2">Скупови</h3>
-<p data-i18n="soon">Ускоро</p>
+<p data-i18n8="setsTopicText">Скуп, елементи и начини задавања скупа.</p>
 </div>
-<b>🔒</b>
+<a href="#skupovi">→</a>
 </article>
 <article class="topic">
 <span>03</span>
@@ -92,7 +92,7 @@
 </section>
 <section class="lesson-picker wrap">
   <p class="eyebrow" data-i18n2="lessonList">ЛЕКЦИЈЕ У ОБЛАСТИ</p>
-  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a><a href="#cinioci">03 <span data-i18n3="lessonThree">Растављање на просте чиниоце</span></a><a href="#sito">04 <span data-i18n7="sieveNav">Ератостеново сито</span></a><a href="#nzd">05 <span data-i18n4="lessonFour">Највећи заједнички делилац</span></a><a href="#nzs">06 <span data-i18n5="lessonFive">Најмањи заједнички садржалац</span></a><a href="#euklid">07 <span data-i18n7="euclidNav">Еуклидов алгоритам</span></a></div>
+  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a><a href="#sito">03 <span data-i18n7="sieveNav">Ератостеново сито</span></a><a href="#cinioci">04 <span data-i18n3="lessonThree">Растављање на просте чиниоце</span></a><a href="#nzd">05 <span data-i18n4="lessonFour">Највећи заједнички делилац</span></a><a href="#nzs">06 <span data-i18n5="lessonFive">Најмањи заједнички садржалац</span></a><a href="#euklid">07 <span data-i18n7="euclidNav">Еуклидов алгоритам</span></a></div>
 </section>
 <section id="lekcija" class="lesson">
 <div class="wrap lesson-grid">
@@ -206,7 +206,7 @@
 </section>
 <section id="cinioci" class="lesson lesson-three">
   <div class="wrap lesson-grid">
-    <aside><span data-i18n3="lessonLabel">ЛЕКЦИЈА 3</span><div class="progress"><i></i></div><small data-i18n2="complete">Комплетна лекција</small></aside>
+    <aside><span data-i18n8="factorLabel">ЛЕКЦИЈА 4</span><div class="progress"><i></i></div><small data-i18n2="complete">Комплетна лекција</small></aside>
     <article><p class="eyebrow" data-i18n="unit">ПРИРОДНИ БРОЈЕВИ</p><h2 data-i18n3="factorTitle">Растављање броја на просте чиниоце</h2>
       <p data-i18n3="factorIntro">Сваки сложен број можемо записати као производ простих бројева. Тај поступак називамо <b>растављање на просте чиниоце</b>.</p>
       <div class="method-grid"><div><span data-i18n3="tree">ДРВО ЧИНИЛАЦА</span><div class="factor-tree"><b>60</b><i>↙ &nbsp; ↘</i><div><b>6</b><b>10</b></div><i>↙↘ &nbsp; ↙↘</i><div><em>2</em><em>3</em><em>2</em><em>5</em></div></div></div><div><span data-i18n3="division">ПОСТУПНО ДЕЉЕЊЕ</span><div class="division-table"><p>60 │ 2</p><p>30 │ 2</p><p>15 │ 3</p><p>5 │ 5</p><p>1 │</p></div></div></div>
@@ -281,6 +281,17 @@
   </div>
 </section>
 <section id="vezbanje-euklid" class="quiz wrap"><div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n7="euclidQuiz">Еуклидов алгоритам — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score7">0</i>/10</strong></div></div><div id="question-card7" class="question-card"><div class="question-meta"><span id="question-number7">1 / 10</span><span id="level7"></span></div><h3 id="question7"></h3><div id="answers7" class="answer-grid"></div><p id="feedback7" aria-live="polite"></p><button id="next7" class="next" hidden></button></div><div id="result7" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title7"></h2><p id="result-text7"></p><button id="restart7" class="cta"></button></div></section>
+<section id="skupovi" class="lesson lesson-sets">
+  <div class="wrap lesson-grid">
+    <aside><span data-i18n8="setsLabel">СКУПОВИ — ЛЕКЦИЈА 1</span><div class="progress"><i></i></div><small data-i18n2="complete">Комплетна лекција</small></aside>
+    <article><p class="eyebrow" data-i18n8="setsUnit">СКУПОВИ</p><h2 data-i18n8="setsTitle">Скуп и елементи скупа</h2><p data-i18n8="setsIntro">Скуп је целина састављена од јасно одређених објеката. Објекте који припадају скупу називамо <b>елементи скупа</b>.</p>
+      <div class="set-example"><span data-i18n8="exampleVowels">ПРИМЕР: скуп самогласника</span><strong>A = { a, e, i, o, u }</strong><div><b>a ∈ A</b><p data-i18n8="belongs">Читамо: „a припада скупу A“.</p></div><div><b>m ∉ A</b><p data-i18n8="notBelongs">Читамо: „m не припада скупу A“.</p></div></div>
+      <h3 data-i18n8="waysTitle">Како задајемо скуп?</h3><div class="compare-cards"><div><span data-i18n8="listing">НАБРАЈАЊЕМ</span><strong class="set-formula">B = {2, 4, 6, 8}</strong><p data-i18n8="listingText">Све елементе пишемо између витичастих заграда.</p></div><div><span data-i18n8="property">ОПИСИВАЊЕМ ОСОБИНЕ</span><strong class="set-formula">B = {x | x је паран број мањи од 10}</strong><p data-i18n8="propertyText">Наводимо заједничку особину свих елемената.</p></div></div>
+      <div class="remember"><strong data-i18n="rememberTitle">ЗАПАМТИ</strong><p data-i18n8="setsRemember">Редослед елемената није важан, а исти елемент записујемо само једном. Празан скуп нема ниједан елемент и означавамо га са ∅ или { }.</p></div>
+    </article>
+  </div>
+</section>
+<section id="vezbanje-skupovi" class="quiz wrap"><div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n8="setsQuiz">Скуп и елементи скупа — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score8">0</i>/10</strong></div></div><div id="question-card8" class="question-card"><div class="question-meta"><span id="question-number8">1 / 10</span><span id="level8"></span></div><h3 id="question8"></h3><div id="answers8" class="answer-grid"></div><p id="feedback8" aria-live="polite"></p><button id="next8" class="next" hidden></button></div><div id="result8" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title8"></h2><p id="result-text8"></p><button id="restart8" class="cta"></button></div></section>
 </main>
 <footer class="wrap">
 <a class="brand" href="#top">
