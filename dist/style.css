@@ -725,6 +725,7 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 .lesson-sets{background:#203f49}
 .lesson-subset{background:#193740}
 .lesson-union{background:#24404d}
+.lesson-difference{background:#183846}
 .lesson-remainder{background:#2d2450}.lesson-equations{background:#202f4d}.lesson-mapping{background:#41304e}.lesson-dmsets{background:#244438}
 
 
@@ -976,6 +977,22 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 .empty-intersection{margin:25px 0;padding:22px;border-left:4px solid var(--lime);border-radius:0 14px 14px 0;background:#1b3540}
 .empty-intersection strong{font-size:19px}
 .empty-intersection p{margin:10px 0 0;color:#d5e4e6}
+.difference-example{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0;padding:25px;border-radius:18px;background:#285364}
+.difference-example>span,.difference-example>strong{grid-column:1/-1}
+.difference-example>span{color:var(--lime);font-size:12px;font-weight:800;letter-spacing:1px}
+.difference-example>strong{font-size:22px;line-height:1.6}
+.difference-example>div{padding:18px;border-radius:14px;background:#173a48;text-align:center}
+.difference-example>div b{color:var(--lime);font-size:21px}
+.difference-example>div p{margin:10px 0 0;color:white;font-size:21px;font-weight:800}
+.venn-card{margin:28px 0;padding:22px;border-radius:18px;background:#102e3a}
+.venn-card svg{display:block;width:100%;height:auto;max-height:310px}
+.venn-card rect{fill:#173a48;stroke:#88d6e8;stroke-width:2}
+.venn-card circle{stroke-width:4}
+.venn-card .venn-a{fill:#8168d780;stroke:#a893f2}
+.venn-card .venn-b{fill:#b6dc5b75;stroke:#c9ef71}
+.venn-card text{fill:white;font-size:20px;font-weight:800;text-anchor:middle}
+.venn-card p{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:16px 0 0}
+.venn-card p b{padding:9px 12px;border-radius:10px;background:#244957;color:white;font-size:14px}
 .mapping-box{display:grid;grid-template-columns:55px 1fr 55px;align-items:center;gap:14px;margin:28px 0;padding:25px;border-radius:18px;background:#553d63;text-align:center}.mapping-box>span{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--lime);color:var(--ink);font-weight:800}.mapping-box>div{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mapping-box b{padding:10px;border-radius:10px;background:#3f2c4a}.mapping-box strong{grid-column:1/-1;color:var(--lime);font-size:22px}.final-test{padding:90px 0}.final-test-head{text-align:center;max-width:800px;margin:0 auto 35px}.final-test-head h2{font-size:40px;letter-spacing:-2px}.final-test-head>p:not(.eyebrow){color:var(--muted);line-height:1.7}.grade-scale{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:24px}.grade-scale span{padding:9px 13px;border-radius:10px;background:var(--lav);font-size:12px}.grade-scale b{color:var(--purple);font-size:17px;margin-left:5px}
 
 
@@ -1132,6 +1149,9 @@ footer{gap:20px;align-items:flex-start;flex-direction:column}
 .subset-example>b{transform:rotate(90deg)}
 .set-operation{grid-template-columns:1fr}
 .set-operation>span,.set-operation>strong{grid-column:auto}
+.difference-example{grid-template-columns:1fr}
+.difference-example>span,.difference-example>strong{grid-column:auto}
+.venn-card{padding:12px}
 .mapping-box{grid-template-columns:42px 1fr 42px;padding:18px}.mapping-box>span{width:40px;height:40px}.final-test-head h2{font-size:31px}
 
 
