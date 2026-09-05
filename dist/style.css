@@ -1005,6 +1005,7 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 .problem-data b{color:var(--lime);font-size:23px}
 .problem-data small{color:#dce6ef;font-size:13px}
 .word-problem ol{margin:0;padding-left:22px;color:#dce6ef;line-height:1.8}
+.sets-final{border-top:1px solid #dbe2ef}
 .mapping-box{display:grid;grid-template-columns:55px 1fr 55px;align-items:center;gap:14px;margin:28px 0;padding:25px;border-radius:18px;background:#553d63;text-align:center}.mapping-box>span{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--lime);color:var(--ink);font-weight:800}.mapping-box>div{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mapping-box b{padding:10px;border-radius:10px;background:#3f2c4a}.mapping-box strong{grid-column:1/-1;color:var(--lime);font-size:22px}.final-test{padding:90px 0}.final-test-head{text-align:center;max-width:800px;margin:0 auto 35px}.final-test-head h2{font-size:40px;letter-spacing:-2px}.final-test-head>p:not(.eyebrow){color:var(--muted);line-height:1.7}.grade-scale{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:24px}.grade-scale span{padding:9px 13px;border-radius:10px;background:var(--lav);font-size:12px}.grade-scale b{color:var(--purple);font-size:17px;margin-left:5px}
 
 
