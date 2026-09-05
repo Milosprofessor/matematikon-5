@@ -92,7 +92,7 @@
 </section>
 <section class="lesson-picker wrap">
   <p class="eyebrow" data-i18n2="lessonList">ЛЕКЦИЈЕ У ОБЛАСТИ</p>
-  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a><a href="#cinioci">03 <span data-i18n3="lessonThree">Растављање на просте чиниоце</span></a><a href="#nzd">04 <span data-i18n4="lessonFour">Највећи заједнички делилац</span></a></div>
+  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a><a href="#cinioci">03 <span data-i18n3="lessonThree">Растављање на просте чиниоце</span></a><a href="#nzd">04 <span data-i18n4="lessonFour">Највећи заједнички делилац</span></a><a href="#nzs">05 <span data-i18n5="lessonFive">Најмањи заједнички садржалац</span></a></div>
 </section>
 <section id="lekcija" class="lesson">
 <div class="wrap lesson-grid">
@@ -237,6 +237,23 @@
   <div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n4="gcdQuiz">Највећи заједнички делилац — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score4">0</i>/10</strong></div></div>
   <div id="question-card4" class="question-card"><div class="question-meta"><span id="question-number4">1 / 10</span><span id="level4"></span></div><h3 id="question4"></h3><div id="answers4" class="answer-grid"></div><p id="feedback4" aria-live="polite"></p><button id="next4" class="next" hidden></button></div>
   <div id="result4" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title4"></h2><p id="result-text4"></p><button id="restart4" class="cta"></button></div>
+</section>
+<section id="nzs" class="lesson lesson-five">
+  <div class="wrap lesson-grid">
+    <aside><span data-i18n5="lessonLabel">ЛЕКЦИЈА 5</span><div class="progress"><i></i></div><small data-i18n2="complete">Комплетна лекција</small></aside>
+    <article><p class="eyebrow" data-i18n="unit">ПРИРОДНИ БРОЈЕВИ</p><h2 data-i18n5="lcmTitle">Најмањи заједнички садржалац — НЗС</h2>
+      <p data-i18n5="lcmIntro">Најмањи природан број који је дељив са сваким од два или више датих бројева називамо <b>најмањи заједнички садржалац</b>. Означавамо га са НЗС.</p>
+      <div class="lcm-example"><div><span data-i18n5="multiples4">Садржаоци броја 4</span><p>4, 8, <b>12</b>, 16, 20, <b>24</b>…</p></div><div><span data-i18n5="multiples6">Садржаоци броја 6</span><p>6, <b>12</b>, 18, <b>24</b>, 30…</p></div><strong id="lcm-example-result">НЗС (4, 6) = 12</strong></div>
+      <h3 data-i18n5="methodOne">Први начин: набрајање садржалаца</h3><p data-i18n5="methodOneText">Набрајамо садржаоце оба броја док не пронађемо први заједнички. Овај поступак је погодан за мање бројеве.</p>
+      <h3 data-i18n5="methodTwo">Други начин: прости чиниоци</h3><div class="example"><span data-i18n="example">ПРИМЕР</span><div><strong>12 = 2² · 3<br>18 = 2 · 3²</strong><p data-i18n5="factorRule">Узимамо све просте чиниоце који се појављују, и то са већим изложиоцем: НЗС (12, 18) = 2² · 3² = 36.</p></div></div>
+      <div class="remember"><strong data-i18n="rememberTitle">ЗАПАМТИ</strong><p data-i18n5="application">НЗС користимо када тражимо када ће се догађаји који се понављају поново догодити истовремено.</p></div>
+    </article>
+  </div>
+</section>
+<section id="vezbanje-nzs" class="quiz wrap">
+  <div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n5="lcmQuiz">Најмањи заједнички садржалац — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score5">0</i>/10</strong></div></div>
+  <div id="question-card5" class="question-card"><div class="question-meta"><span id="question-number5">1 / 10</span><span id="level5"></span></div><h3 id="question5"></h3><div id="answers5" class="answer-grid"></div><p id="feedback5" aria-live="polite"></p><button id="next5" class="next" hidden></button></div>
+  <div id="result5" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title5"></h2><p id="result-text5"></p><button id="restart5" class="cta"></button></div>
 </section>
 </main>
 <footer class="wrap">
