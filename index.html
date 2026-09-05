@@ -92,7 +92,7 @@
 </section>
 <section class="lesson-picker wrap">
   <p class="eyebrow" data-i18n2="lessonList">ЛЕКЦИЈЕ У ОБЛАСТИ</p>
-  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a><a href="#cinioci">03 <span data-i18n3="lessonThree">Растављање на просте чиниоце</span></a></div>
+  <div><a href="#lekcija">01 <span data-i18n2="lessonOne">Дељивост бројева</span></a><a href="#prosti">02 <span data-i18n2="lessonTwo">Прости и сложени бројеви</span></a><a href="#cinioci">03 <span data-i18n3="lessonThree">Растављање на просте чиниоце</span></a><a href="#nzd">04 <span data-i18n4="lessonFour">Највећи заједнички делилац</span></a></div>
 </section>
 <section id="lekcija" class="lesson">
 <div class="wrap lesson-grid">
@@ -220,6 +220,23 @@
   <div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n3="factorQuiz">Прости чиниоци — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score3">0</i>/10</strong></div></div>
   <div id="question-card3" class="question-card"><div class="question-meta"><span id="question-number3">1 / 10</span><span id="level3"></span></div><h3 id="question3"></h3><div id="answers3" class="answer-grid"></div><p id="feedback3" aria-live="polite"></p><button id="next3" class="next" hidden></button></div>
   <div id="result3" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title3"></h2><p id="result-text3"></p><button id="restart3" class="cta"></button></div>
+</section>
+<section id="nzd" class="lesson lesson-four">
+  <div class="wrap lesson-grid">
+    <aside><span data-i18n4="lessonLabel">ЛЕКЦИЈА 4</span><div class="progress"><i></i></div><small data-i18n2="complete">Комплетна лекција</small></aside>
+    <article><p class="eyebrow" data-i18n="unit">ПРИРОДНИ БРОЈЕВИ</p><h2 data-i18n4="gcdTitle">Највећи заједнички делилац — НЗД</h2>
+      <p data-i18n4="gcdIntro">Највећи број којим су два или више бројева дељиви називамо <b>највећи заједнички делилац</b>. Означавамо га са НЗД.</p>
+      <div class="gcd-example"><div><span data-i18n4="divisors12">Делиоци броја 12</span><p>1, 2, 3, 4, 6, 12</p></div><div><span data-i18n4="divisors18">Делиоци броја 18</span><p>1, 2, 3, 6, 9, 18</p></div><strong id="gcd-example-result">НЗД (12, 18) = 6</strong></div>
+      <h3 data-i18n4="methodOne">Први начин: набрајање делилаца</h3><p data-i18n4="methodOneText">Набројимо делиоце оба броја, издвојимо заједничке и изаберемо највећи. Овај поступак је погодан за мање бројеве.</p>
+      <h3 data-i18n4="methodTwo">Други начин: прости чиниоци</h3><div class="example"><span data-i18n="example">ПРИМЕР</span><div><strong>24 = 2³ · 3<br>36 = 2² · 3²</strong><p data-i18n4="factorRule">Узимамо само заједничке просте чиниоце, и то са мањим изложиоцем: НЗД (24, 36) = 2² · 3 = 12.</p></div></div>
+      <div class="remember"><strong data-i18n="rememberTitle">ЗАПАМТИ</strong><p data-i18n4="coprime">Ако је НЗД два броја једнак 1, ти бројеви су узајамно прости. На пример, НЗД (8, 15) = 1.</p></div>
+    </article>
+  </div>
+</section>
+<section id="vezbanje-nzd" class="quiz wrap">
+  <div class="quiz-head"><div><p class="eyebrow" data-i18n="check">ПРОВЕРИ ЗНАЊЕ</p><h2 data-i18n4="gcdQuiz">Највећи заједнички делилац — 10 задатака</h2><p data-i18n="quizIntro">Решавај редом. Одмах ћеш добити објашњење сваког одговора.</p></div><div class="score"><span data-i18n="scoreLabel">РЕЗУЛТАТ</span><strong><i id="score4">0</i>/10</strong></div></div>
+  <div id="question-card4" class="question-card"><div class="question-meta"><span id="question-number4">1 / 10</span><span id="level4"></span></div><h3 id="question4"></h3><div id="answers4" class="answer-grid"></div><p id="feedback4" aria-live="polite"></p><button id="next4" class="next" hidden></button></div>
+  <div id="result4" class="result" hidden><span class="result-icon">∑</span><h2 id="result-title4"></h2><p id="result-text4"></p><button id="restart4" class="cta"></button></div>
 </section>
 </main>
 <footer class="wrap">
