@@ -726,6 +726,7 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 .lesson-subset{background:#193740}
 .lesson-union{background:#24404d}
 .lesson-difference{background:#183846}
+.lesson-application{background:#26384b}
 .lesson-remainder{background:#2d2450}.lesson-equations{background:#202f4d}.lesson-mapping{background:#41304e}.lesson-dmsets{background:#244438}
 
 
@@ -993,6 +994,17 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 .venn-card text{fill:white;font-size:20px;font-weight:800;text-anchor:middle}
 .venn-card p{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:16px 0 0}
 .venn-card p b{padding:9px 12px;border-radius:10px;background:#244957;color:white;font-size:14px}
+.count-formula{margin:28px 0;padding:26px;border-radius:18px;background:#324c66;text-align:center}
+.count-formula span{display:block;color:var(--lime);font-size:12px;font-weight:800;letter-spacing:1px}
+.count-formula strong{display:block;margin:14px 0;color:white;font-size:26px}
+.count-formula p{margin:0;color:#dce6ef}
+.word-problem{margin:24px 0 30px;padding:25px;border-radius:18px;background:#1d3043}
+.word-problem>p{margin-top:0;color:white;font-size:18px;font-weight:700}
+.problem-data{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:20px 0}
+.problem-data span{display:grid;gap:4px;padding:14px 8px;border-radius:12px;background:#304a62;text-align:center}
+.problem-data b{color:var(--lime);font-size:23px}
+.problem-data small{color:#dce6ef;font-size:13px}
+.word-problem ol{margin:0;padding-left:22px;color:#dce6ef;line-height:1.8}
 .mapping-box{display:grid;grid-template-columns:55px 1fr 55px;align-items:center;gap:14px;margin:28px 0;padding:25px;border-radius:18px;background:#553d63;text-align:center}.mapping-box>span{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--lime);color:var(--ink);font-weight:800}.mapping-box>div{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mapping-box b{padding:10px;border-radius:10px;background:#3f2c4a}.mapping-box strong{grid-column:1/-1;color:var(--lime);font-size:22px}.final-test{padding:90px 0}.final-test-head{text-align:center;max-width:800px;margin:0 auto 35px}.final-test-head h2{font-size:40px;letter-spacing:-2px}.final-test-head>p:not(.eyebrow){color:var(--muted);line-height:1.7}.grade-scale{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:24px}.grade-scale span{padding:9px 13px;border-radius:10px;background:var(--lav);font-size:12px}.grade-scale b{color:var(--purple);font-size:17px;margin-left:5px}
 
 
@@ -1152,6 +1164,8 @@ footer{gap:20px;align-items:flex-start;flex-direction:column}
 .difference-example{grid-template-columns:1fr}
 .difference-example>span,.difference-example>strong{grid-column:auto}
 .venn-card{padding:12px}
+.problem-data{grid-template-columns:1fr 1fr}
+.count-formula strong{font-size:21px}
 .mapping-box{grid-template-columns:42px 1fr 42px;padding:18px}.mapping-box>span{width:40px;height:40px}.final-test-head h2{font-size:31px}
 
 
