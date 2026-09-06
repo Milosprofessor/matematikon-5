@@ -1016,6 +1016,11 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 .fraction-parts{display:grid;grid-template-columns:140px 1fr;align-items:center;gap:26px;margin:24px 0;padding:24px;border-radius:18px;background:#402e5d}
 .fraction-symbol{display:grid;justify-items:center;color:white;font-size:44px;line-height:1}
 .fraction-symbol span{width:72px;height:4px;margin:8px 0;background:var(--lime)}
+.math-fraction{display:inline-grid;grid-template-rows:auto auto;min-width:1.25em;margin:0 .08em;text-align:center;vertical-align:-.35em;line-height:1}
+.math-fraction>span:first-child{padding:0 .18em .1em;border-bottom:.09em solid currentColor}
+.math-fraction>span:last-child{padding:.1em .18em 0}
+.answer-grid .math-fraction{font-size:1.2em}
+#question19 .math-fraction,#feedback19 .math-fraction{font-size:1.08em}
 .fraction-parts>div:last-child{display:grid;gap:14px}
 .fraction-parts p{display:grid;gap:4px;margin:0;padding:14px;border-radius:12px;background:#322348}
 .fraction-parts p strong{color:var(--lime);font-size:13px;letter-spacing:1px}
