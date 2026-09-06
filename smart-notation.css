@@ -1,0 +1,3 @@
+.segment-symbol,.ray-symbol{position:relative;display:inline-block;padding-top:3px;font-family:serif;font-style:italic;line-height:1}
+.segment-symbol::before,.ray-symbol::before{position:absolute;top:0;right:0;left:0;height:1.5px;background:currentColor;content:""}
+.ray-symbol::after{position:absolute;top:-2px;right:-1px;width:6px;height:6px;border-top:1.5px solid;border-right:1.5px solid;transform:rotate(45deg);content:""}
