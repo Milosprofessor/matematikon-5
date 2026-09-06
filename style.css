@@ -1135,6 +1135,28 @@ footer{border-top:1px solid var(--line);padding:38px 0;display:flex;align-items:
 
 
 
+.lesson-geometry-extra:nth-of-type(even){background:linear-gradient(145deg,#211d3d,#302650)}
+.geometry-extra-visual{box-sizing:border-box;width:100%;max-width:100%;margin:28px 0;padding:18px;border-radius:20px;background:#f7f4ff;overflow:hidden}
+.geometry-extra-visual svg{display:block;width:100%;max-width:100%;height:auto;min-height:230px}
+.geometry-extra-visual line,.geometry-extra-visual polyline,.geometry-extra-visual polygon{fill:none;stroke:#5528c9;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.geometry-extra-visual circle{fill:#b7f34a;stroke:#252040;stroke-width:2}
+.geometry-extra-visual text{fill:#252040;font:700 18px Manrope,sans-serif}
+.geometry-extra-visual .arc,.geometry-extra-visual .construction{fill:none;stroke:#e65d8f;stroke-width:4}
+.geometry-extra-visual .second{stroke:#8c63ed}.geometry-extra-visual .measure{fill:#e0447c;font-size:22px}
+.geometry-extra-visual .protractor{fill:#e7dcff;stroke:#8c63ed;stroke-width:4;opacity:.82}
+.geometry-extra-visual .region,.geometry-extra-visual .circle-fill{fill:#e7dcff;stroke:#5528c9}
+.geometry-extra-visual .axis{stroke:#e65d8f;stroke-dasharray:10 8}.geometry-extra-visual .bisector{stroke:#e65d8f;stroke-dasharray:8 7}
+.geometry-extra-visual .guide{stroke:#b2a8c9;stroke-width:2;stroke-dasharray:6 6}.geometry-extra-visual .sym-left{fill:#d8c8ff}.geometry-extra-visual .sym-right{fill:#c9f783}
+.geometry-step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0}
+.geometry-step-grid article{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;align-items:start;min-width:0;padding:18px;border-radius:16px;background:rgba(255,255,255,.07)}
+.geometry-step-grid b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--lime);color:var(--ink)}
+.geometry-step-grid p{margin:5px 0 0;color:#e5deeb;line-height:1.55}
+.geometry-example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:28px 0}
+.geometry-example-grid article{min-width:0;padding:20px;border:1px solid rgba(183,243,74,.25);border-radius:17px;background:#49345d}
+.geometry-example-grid p{margin:0;color:#eee8f4;line-height:1.65}.geometry-example-grid b{display:block;margin-bottom:8px;color:var(--lime);font-size:12px;letter-spacing:1px}.geometry-example-grid strong{color:#fff}
+.geometry-mixed{margin-top:70px;padding:65px 0;background:linear-gradient(135deg,#173f49,#29234a)}.geometry-mixed h2{margin:8px 0 14px;color:#fff;font-size:42px}.geometry-mixed p:not(.eyebrow){max-width:760px;color:#ddd7e8;line-height:1.65}
+.geometry-final{margin-top:70px}
+
 @media(max-width:760px){.wrap{width:min(100% - 26px,1120px)}
 
 
@@ -1319,6 +1341,7 @@ footer{gap:20px;align-items:flex-start;flex-direction:column}
 .geometry-concepts{grid-template-columns:minmax(0,1fr)}.geometry-notation{grid-template-columns:minmax(0,1fr)}.geometry-board{padding:8px;overflow:hidden}.geometry-board svg{width:100%;min-width:0;min-height:160px}
 .line-relation-grid{grid-template-columns:1fr}.parallel-fact>div{grid-template-columns:auto 1fr}.parallel-fact>div i:last-child{display:none}
 .angle-anatomy{grid-template-columns:minmax(0,1fr);padding:12px}.angle-type-grid{grid-template-columns:1fr 1fr}.angle-type-grid article:last-child{grid-column:1/-1}.angle-name-rule{align-items:flex-start;flex-direction:column}
+.geometry-extra-visual{padding:8px}.geometry-extra-visual svg{min-height:170px}.geometry-step-grid,.geometry-example-grid{grid-template-columns:minmax(0,1fr)}.geometry-mixed h2{font-size:31px}
 
 
 
