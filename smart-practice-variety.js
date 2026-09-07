@@ -1,13 +1,63 @@
 (function(){
-const L=(a,b)=>[a,b],pick=(pair,i)=>pair?.[i]||'',choice=(value,a,b)=>({value,label:L(a,b)});
-function signature(value){const text=JSON.stringify(value);let n=0;for(let i=0;i<text.length;i++)n=(n*31+text.charCodeAt(i))>>>0;return n}
-function rotated(items,value){if(!items.length)return items;const shift=signature(value)%items.length;return items.slice(shift).concat(items.slice(0,shift))}
-function answerLabel(q,i){if(q.kind==='choice')return pick(q.choices.find(x=>String(x.value)===String(q.answer))?.label,i);return String(q.answer)+(q.unit?' '+q.unit:'')}
-function wrongAnswer(q,v){if(q.kind==='choice'){const options=q.choices.filter(x=>String(x.value)!==String(q.answer));return options[signature(v)%options.length]}const a=Number(q.answer),delta=a===0?1:Math.max(1,Math.min(10,Math.round(Math.abs(a)*.2)));return a+(signature(v)%2?delta:-delta)}
-function copyBase(base,v){return Object.assign({kind:base.kind},base.make(v))}
-function verifyType(base){return{id:base.id+'--provera',sourceTypeId:base.id,typeKind:'verification',level:base.level,topic:base.topic,kind:'choice',variants:base.variants,make(v){const q=copyBase(base,v),truth=signature(v)%2===0,proposal=truth?q.kind==='choice'?q.choices.find(x=>String(x.value)===String(q.answer)):q.answer:wrongAnswer(q,v),label=q.kind==='choice'?proposal.label:L(String(proposal)+(q.unit?' '+q.unit:''),String(proposal)+(q.unit?' '+q.unit:''));return{prompt:L(`${pick(q.prompt,0)}<br><br>Učenik tvrdi da je odgovor <b>${pick(label,0)}</b>. Da li je tvrdnja tačna?`,`${pick(q.prompt,1)}<br><br>Ученик тврди да је одговор <b>${pick(label,1)}</b>. Да ли је тврдња тачна?`),answer:truth?'yes':'no',choices:[choice('yes','tačna','тачна'),choice('no','nije tačna','није тачна')],hint:L(`${pick(q.hint,0)} Zatim proveri baš ponuđeni odgovor.`,`${pick(q.hint,1)} Затим провери баш понуђени одговор.`),steps:[...q.steps,L(truth?'Predloženi odgovor se poklapa sa tačnim rešenjem.':'Predloženi odgovor se ne poklapa sa tačnim rešenjem.',truth?'Предложени одговор се поклапа са тачним решењем.':'Предложени одговор се не поклапа са тачним решењем.')]}}}}
-function errorType(base){return{id:base.id+'--pronadji-gresku',sourceTypeId:base.id,typeKind:'error-analysis',level:base.level,topic:base.topic,kind:'choice',variants:base.variants,make(v){const q=copyBase(base,v),wrong=wrongAnswer(q,v),wrongLabel=q.kind==='choice'?wrong.label:L(String(wrong)+(q.unit?' '+q.unit:''),String(wrong)+(q.unit?' '+q.unit:''));return{prompt:L(`${pick(q.prompt,0)}<br><br>U svesci je zapisano: <b>rezultat je ${pick(wrongLabel,0)}</b>. Izaberi tačan zaključak.`,`${pick(q.prompt,1)}<br><br>У свесци је записано: <b>резултат је ${pick(wrongLabel,1)}</b>. Изабери тачан закључак.`),answer:'error',choices:rotated([choice('error','Postoji greška — rezultat treba ispraviti.','Постоји грешка — резултат треба исправити.'),choice('ok','Nema greške — zapis je tačan.','Нема грешке — запис је тачан.'),choice('unknown','Nije moguće proveriti iz datih podataka.','Није могуће проверити из датих података.')],v),hint:L(`${pick(q.hint,0)} Izračunaj samostalno pre nego što oceniš zapis.`,`${pick(q.hint,1)} Израчунај самостално пре него што оцениш запис.`),steps:[...q.steps,L(`Tačan odgovor je ${answerLabel(q,0)}, pa zapisani rezultat sadrži grešku.`,`Тачан одговор је ${answerLabel(q,1)}, па записани резултат садржи грешку.`)]}}}}
-function methodType(base){return{id:base.id+'--izaberi-postupak',sourceTypeId:base.id,typeKind:'strategy',level:base.level,topic:base.topic,kind:'choice',variants:base.variants,make(v){const q=copyBase(base,v);return{prompt:L(`${pick(q.prompt,0)}<br><br>Koji prvi korak ili ideja najbolje vodi ka rešenju?`,`${pick(q.prompt,1)}<br><br>Који први корак или идеја најбоље води ка решењу?`),answer:'method',choices:rotated([choice('method',pick(q.hint,0),pick(q.hint,1)),choice('guess','Nasumično izaberi rezultat bez provere.','Насумично изабери резултат без провере.'),choice('irrelevant','Promeni sve podatke iz zadatka.','Промени све податке из задатка.')],v),hint:L('Traži postupak koji koristi baš date matematičke odnose.','Тражи поступак који користи баш дате математичке односе.'),steps:[L(`Odgovarajuća ideja je: ${pick(q.hint,0)}`,`Одговарајућа идеја је: ${pick(q.hint,1)}`),...q.steps]}}}}
-function conclusionType(base){return{id:base.id+'--zakljucivanje',sourceTypeId:base.id,typeKind:'reasoning',level:base.level,topic:base.topic,kind:'choice',variants:base.variants,make(v){const q=copyBase(base,v),correct=L(answerLabel(q,0),answerLabel(q,1)),wrong=wrongAnswer(q,v),wrongLabel=q.kind==='choice'?wrong.label:L(String(wrong)+(q.unit?' '+q.unit:''),String(wrong)+(q.unit?' '+q.unit:''));return{prompt:L(`${pick(q.prompt,0)}<br><br>Koji zaključak je saglasan sa svim datim podacima?`,`${pick(q.prompt,1)}<br><br>Који закључак је сагласан са свим датим подацима?`),answer:'correct',choices:rotated([choice('correct',`Tačan zaključak je: ${correct[0]}.`,`Тачан закључак је: ${correct[1]}.`),choice('wrong',`Tačan zaključak je: ${pick(wrongLabel,0)}.`,`Тачан закључак је: ${pick(wrongLabel,1)}.`),choice('none','Podaci nisu potrebni za zaključak.','Подаци нису потребни за закључак.')],v),hint:L(`${pick(q.hint,0)} Odbaci zaključke koji krše taj odnos.`,`${pick(q.hint,1)} Одбаци закључке који крше тај однос.`),steps:[...q.steps,L(`Jedini saglasan zaključak daje odgovor ${correct[0]}.`,`Једини сагласан закључак даје одговор ${correct[1]}.`)]}}}}
-for(const config of Object.values(window.MatematikONPracticeAreas||{})){const originals=config.templates.filter(t=>!t.sourceTypeId),derived=[];for(const base of originals){derived.push(verifyType(base),errorType(base),methodType(base),conclusionType(base))}config.templates.push(...derived);config.structure='area > topic > level > type > variant'}
+const L=(latn,cyrl)=>[latn,cyrl];
+const pick=(pair,index)=>pair?.[index]||'';
+const choice=(value,latn,cyrl)=>({value,label:L(latn,cyrl)});
+
+function signature(value){
+ const text=JSON.stringify(value);let number=0;
+ for(let i=0;i<text.length;i++)number=(number*31+text.charCodeAt(i))>>>0;
+ return number;
+}
+function rotated(items,value){
+ if(!items.length)return items;
+ const shift=signature(value)%items.length;
+ return items.slice(shift).concat(items.slice(0,shift));
+}
+function baseQuestion(base,variant){return Object.assign({kind:base.kind},base.make(variant))}
+function answerOption(question){return question.choices?.find(item=>String(item.value)===String(question.answer))}
+function labelFor(value,unit=''){const text=String(value)+(unit?' '+unit:'');return L(text,text)}
+function rounded(value){return Math.round(value*1000)/1000}
+function numberDistractors(answer,variant){
+ const value=Number(answer),whole=Number.isInteger(value),step=whole?Math.max(1,Math.min(10,Math.round(Math.abs(value)*.1)||1)):Math.max(.1,Math.min(1,Math.abs(value)*.1));
+ const first=rounded(value+step),second=rounded(value-step<0?value+2*step:value-step);
+ return signature(variant)%2?[first,second]:[second,first];
+}
+function wrongChoice(question,variant){
+ const options=question.choices.filter(item=>String(item.value)!==String(question.answer));
+ return options[signature(variant)%options.length];
+}
+
+function chooseAnswerType(base){return{
+ id:base.id+'--izbor-odgovora',sourceTypeId:base.id,typeKind:'answer-choice',level:base.level,topic:base.topic,kind:'choice',variants:base.variants,
+ make(variant){
+  const question=baseQuestion(base,variant),values=[question.answer,...numberDistractors(question.answer,variant)];
+  return{prompt:question.prompt,answer:String(question.answer),choices:rotated(values.map(value=>({value:String(value),label:labelFor(value,question.unit)})),variant),hint:question.hint,steps:question.steps,diagram:question.diagram};
+ }
+}}
+
+function checkAnswerType(base){return{
+ id:base.id+'--proveri-odgovor',sourceTypeId:base.id,typeKind:'quick-check',level:base.level,topic:base.topic,kind:'choice',variants:base.variants,
+ make(variant){
+  const question=baseQuestion(base,variant),correct=signature(variant)%2===0;
+  const proposed=correct?(question.kind==='choice'?answerOption(question):{label:labelFor(question.answer,question.unit)}):(question.kind==='choice'?wrongChoice(question,variant):{label:labelFor(numberDistractors(question.answer,variant)[0],question.unit)});
+  return{
+   prompt:L(`${pick(question.prompt,0)}<br><b>Učenik bira „${pick(proposed.label,0)}“. Da li je u pravu?</b>`,`${pick(question.prompt,1)}<br><b>Ученик бира „${pick(proposed.label,1)}“. Да ли је у праву?</b>`),
+   answer:correct?'yes':'no',
+   choices:rotated([choice('yes','Da','Да'),choice('no','Ne','Не')],variant),
+   hint:L(`${pick(question.hint,0)} Proveri ponuđeni odgovor.`,`${pick(question.hint,1)} Провери понуђени одговор.`),
+   steps:[...question.steps,L(correct?'Ponuđeni odgovor je tačan.':'Ponuđeni odgovor nije tačan.',correct?'Понуђени одговор је тачан.':'Понуђени одговор није тачан.')],
+   diagram:question.diagram
+  };
+ }
+}}
+
+for(const config of Object.values(window.MatematikONPracticeAreas||{})){
+ const originals=config.templates.filter(template=>!template.sourceTypeId),extra=[];
+ for(const base of originals){
+  if(base.kind==='number')extra.push(chooseAnswerType(base));
+  extra.push(checkAnswerType(base));
+ }
+ config.templates.push(...extra);
+ config.structure='oblast > lekcija > nivo > tip > varijanta';
+}
 })();
