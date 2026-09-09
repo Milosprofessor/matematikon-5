@@ -1,7 +1,7 @@
 (function(){
 const STORAGE_KEY='matematikon-learning-v1';
 const testTopics={
-13:['ostatak','ostatak','jednacine','jednacine','pridruzivanje','pridruzivanje','skupovi-ds','skupovi-ds','lekcija','lekcija','prosti','prosti','sito','sito','cinioci','cinioci','nzd','nzs','euklid','euklid'],
+13:['ostatak','ostatak','ostatak','jednacine','jednacine','jednacine','pridruzivanje','pridruzivanje','skupovi','unija-presek','unija-presek','razlika-skupova','primena-skupova','skupovi-ds','lekcija','lekcija','prosti','cinioci','nzd','nzs'],
 18:['skupovi','skupovi','skupovi','skupovi','podskup','podskup','podskup','podskup','unija-presek','unija-presek','unija-presek','unija-presek','razlika-skupova','razlika-skupova','razlika-skupova','razlika-skupova','primena-skupova','primena-skupova','primena-skupova','primena-skupova'],
 33:['pojam-razlomka','vrste-razlomaka','prosirivanje-skracivanje','uporedjivanje-razlomaka','decimalni-zapis','sabiranje-razlomaka','sabiranje-razlomaka','oduzimanje-razlomaka','oduzimanje-razlomaka','mnozenje-razlomaka','mnozenje-razlomaka','deljenje-razlomaka','deljenje-razlomaka','sabiranje-decimalnih','oduzimanje-decimalnih','mnozenje-decimalnih','mnozenje-decimalnih','deljenje-decimalnih','izrazi-razlomci-decimalni','izrazi-razlomci-decimalni'],
 47:['merenje-crtanje-uglova','racunanje-uglovima','mnogougaona-linija-oblast','kruznica-i-krug','polozaj-prave-i-kruznice','osna-simetrija','simetrala-duzi','simetrala-ugla','centralna-simetrija','vektori','translacija','paralelogram','merenje-crtanje-uglova','racunanje-uglovima','kruznica-i-krug','polozaj-prave-i-kruznice','centralna-simetrija','vektori','translacija','paralelogram']
