@@ -1,6 +1,6 @@
 (function(){
 const P=(lat,cyrl)=>[lat,cyrl];
-const D=(answerLat,answerCyrl)=>`<details class="class-answer"><summary data-lat="Prikaži odgovor" data-cyrl="Прикажи одговор"></summary><div class="answer-lat">${answerLat}</div><div class="answer-cyrl">${answerCyrl}</div></details>`;
+const D=(answerLat,answerCyrl)=>`<details class="class-answer"><summary data-lat="Prikaži rešenje" data-cyrl="Прикажи решење"></summary><div class="answer-lat">${answerLat}</div><div class="answer-cyrl">${answerCyrl}</div></details>`;
 const stage=(label,duration,lat,cyrl)=>({label:P(label,label==='Uvod i obnavljanje'?'Увод и обнављање':label==='Novo gradivo'?'Ново градиво':label==='Vođeni primeri'?'Вођени примери':label==='Rad na tabli'?'Рад на табли':label==='Samostalni rad'?'Самостални рад':'Излазна картица'),duration,content:P(lat,cyrl)});
 const plans={
 ostatak:{area:'prirodni',title:P('Deljenje sa ostatkom','Дељење са остатком'),goals:P(['odredi količnik i ostatak','zapiše a = b · q + r','proveri da je 0 ≤ r < b'],['одреди количник и остатак','запише a = b · q + r','провери да је 0 ≤ r < b']),stages:[
