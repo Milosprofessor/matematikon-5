@@ -54,7 +54,7 @@ function buildPlan({config,level,mode='normal',history=[],weakTopics=[],count=10
 function alternate({config,current,items=[],history=[],random=Math.random}){
  const original=config.templates.find(template=>template.id===current.templateId);
  if(!original)return current;
- const usedTypes=new Set(items.map(item=>item.templateId)),usedKeys=new Set(items.flatMap(item=>[item.key,item.contentKey].filter(Boolean))),recentTypes=recentTypeOrder(history),sameTopic=config.templates.filter(template=>template.topic===original.topic&&template.level===original.level&&template.id!==original.id);
+ const usedTypes=new Set(items.map(item=>item.templateId)),usedKeys=new Set([...items.flatMap(item=>[item.key,item.contentKey].filter(Boolean)),current.key,current.contentKey].filter(Boolean)),recentTypes=recentTypeOrder(history),sameTopic=config.templates.filter(template=>template.topic===original.topic&&template.level===original.level&&template.id!==original.id);
  const differentSource=sameTopic.filter(template=>sourceId(template)!==sourceId(original)&&!usedTypes.has(template.id));
  const unusedSameTopic=sameTopic.filter(template=>!usedTypes.has(template.id));
  const pool=differentSource.length?differentSource:unusedSameTopic.length?unusedSameTopic:sameTopic;
