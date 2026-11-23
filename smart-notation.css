@@ -1,0 +1,4 @@
+.segment-symbol,.vector-symbol{position:relative;display:inline-block;padding-top:5px;font-family:serif;font-style:italic;line-height:1}
+.segment-symbol::before,.vector-symbol::before{position:absolute;top:1px;right:0;left:0;height:1.5px;background:currentColor;content:""}
+.vector-symbol::after{position:absolute;top:-1px;right:-1px;width:6px;height:6px;border-top:1.5px solid;border-right:1.5px;transform:rotate(45deg);content:""}
+.ray-symbol{display:inline-block;font-family:serif;font-style:italic;white-space:nowrap}

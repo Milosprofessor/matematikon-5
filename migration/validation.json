@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-10-14",
+  "node": "24.19.0",
+  "npm": "11.9.0",
+  "original_byte_check": {
+    "passed": true,
+    "files": 71,
+    "changed_files": []
+  },
+  "original_history_bundle": {
+    "verified": true,
+    "complete_history": true
+  },
+  "credentials_scan": {
+    "known_token_or_private_key_patterns_in_current_files": [],
+    "secret_named_files_in_history": []
+  },
+  "published_site_changed": false,
+  "source_remote_push_performed": false,
+  "new_site_version_saved": false,
+  "student_storage_accessed": false,
+  "github_repository_created": false,
+  "codex_cloud_environment_created": false,
+  "browser_visual_or_interaction_qa_performed": false,
+  "javascript_syntax": {
+    "passed": true,
+    "files": 23
+  },
+  "html_local_asset_references": {
+    "passed": true,
+    "html_files": 6
+  },
+  "root_vs_original_dist": {
+    "identical": true,
+    "files": 35
+  },
+  "npm_dependencies": "None; original static project",
+  "limitations": [
+    "Manrope font remains externally referenced via Google Fonts, not included as offline font bytes.",
+    "No browser interaction or visual QA was performed."
+  ]
+}

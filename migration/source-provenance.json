@@ -1,0 +1,290 @@
+{
+  "name": "matematikon-5",
+  "project_id": "appgprj_6a9c012b08308191acb3140c8e6c9033",
+  "site_title": "MatematikON",
+  "live_url": "https://matematikon-5.milos-python.chatgpt.site",
+  "latest_version_number": 45,
+  "last_site_update": "2026-09-13T08:08:19.569595+00:00",
+  "source_commit": "78aafa37cd9505aacefa14758dc27bf4d97a12d7",
+  "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_74733ab6900881918e6a08e2671d93e6",
+  "deployment_id": "appgdep_6aa65939bd488191a84497981966e098",
+  "versions": [
+    {
+      "version_number": 45,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_74733ab6900881918e6a08e2671d93e6",
+      "source_commit": "78aafa37cd9505aacefa14758dc27bf4d97a12d7",
+      "deployment_id": "appgdep_6aa65939bd488191a84497981966e098"
+    },
+    {
+      "version_number": 44,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_8633a0db5bac81919213abbc80ad7a02",
+      "source_commit": "2a0dd2edd014fec50822be2945aacd0212c06e65",
+      "deployment_id": "appgdep_6aa562ab6a488191a90981feade22a57"
+    },
+    {
+      "version_number": 43,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_e025f9e620548191b83a772991347f78",
+      "source_commit": "b447e33bc13080a4a2efe503f6d7a975b51197d4",
+      "deployment_id": "appgdep_6aa4fcd563a0819190bdb4bff2041886"
+    },
+    {
+      "version_number": 42,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_9f47ef3474a881919bae92d282454551",
+      "source_commit": "1acaedb47f2629ce38a64150ed147bada6a4e197",
+      "deployment_id": "appgdep_6aa37baff62081918fd48a7d96777366"
+    },
+    {
+      "version_number": 41,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_ceb0b8f190288191afde501c6e58402d",
+      "source_commit": "c40245a050c0be5288d3acf38dc92d18b480b9b0",
+      "deployment_id": "appgdep_6aa2bec8a3408191a55e28d7b5247541"
+    },
+    {
+      "version_number": 40,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_6449073d690c8191a4e172e28fc3ca6e",
+      "source_commit": "10f33f743a5b05dfc768c4a6f76a40e66e2c5523",
+      "deployment_id": "appgdep_6aa1912961ac8191946ecd7116ae58aa"
+    },
+    {
+      "version_number": 39,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_0e5ed7c6b8008191b77ecf381a339064",
+      "source_commit": "f6c73d991f3654392a0aa8cd243fad09766b1614",
+      "deployment_id": "appgdep_6a9eecaf21048191b34a2a9b8a43f2ec"
+    },
+    {
+      "version_number": 38,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_133b164675f0819191970cb3c9ab7c5c",
+      "source_commit": "79433552ad151405065d895323ec7dd55ff912cd",
+      "deployment_id": "appgdep_6a9ee9f970f08191873f069ec75c80a4"
+    },
+    {
+      "version_number": 37,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_9ba349477b9481919242108e178308b5",
+      "source_commit": "634f16b992d7d38c6fd1a05f4694969c2b028e02",
+      "deployment_id": "appgdep_6a9edcfd47248191870658516a74a02f"
+    },
+    {
+      "version_number": 36,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_74cd06cf7f108191b1c6af1761d1528b",
+      "source_commit": "067a8c0e2a87928aa76327ca5a8f6e5afb5998ed",
+      "deployment_id": "appgdep_6a9e3146dc808191870f767b7d5fd18f"
+    },
+    {
+      "version_number": 35,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_647c072b159c8191b5cea8d06312f1d4",
+      "source_commit": "53e0eabdfbc6563d20ea87c2c620329b9cac239e",
+      "deployment_id": "appgdep_6a9dcf7c7ad48191867b77c835d3b3de"
+    },
+    {
+      "version_number": 34,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_d632ef3c3da8819199a698069d121bb3",
+      "source_commit": "5549154ad92669825202b1f2900b8aa7d24c8eec",
+      "deployment_id": "appgdep_6a9d9555f5f88191ab26febf74750483"
+    },
+    {
+      "version_number": 33,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_b6b2a77bc21c819192791b710e79e543",
+      "source_commit": "bf58fe1a2c9a505928e52986b912139b1d1c4720",
+      "deployment_id": "appgdep_6a9d90b125a88191b38a78a77ccd0d56"
+    },
+    {
+      "version_number": 32,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_a363f3e5776481919ebdc295cb4d97e0",
+      "source_commit": "d823830161d4155697e4845c13b38e82a14734d1",
+      "deployment_id": "appgdep_6a9d8b97fcc48191b78af71276cc2e32"
+    },
+    {
+      "version_number": 31,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_ff62d892b6988191995add5e9e08c23d",
+      "source_commit": "8f65dd3cc951e007101ed77f4f229b52c2b6777d",
+      "deployment_id": "appgdep_6a9d5887f0a48191aaf95a69b12dcfba"
+    },
+    {
+      "version_number": 30,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_b64808baac948191bf4716bf76189805",
+      "source_commit": "a6987362689ab27640000c348ac97a18561d1588",
+      "deployment_id": "appgdep_6a9d4f8f11288191ace64d1141d5845d"
+    },
+    {
+      "version_number": 29,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_6f13be664f0c8191acf1bbda03ee8d45",
+      "source_commit": "71bfd2b7759d06fedc5a93027bb487f3e651238e",
+      "deployment_id": "appgdep_6a9d4ea3a7c881919ff85171a64f641d"
+    },
+    {
+      "version_number": 28,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_6fa7bb160ab08191abcb77224c0b83fa",
+      "source_commit": "a38fb82db3d0e3c62bd0d74fd6608171bc0a48dc",
+      "deployment_id": "appgdep_6a9d4ad3919c8191b11c0fcf069c9ff6"
+    },
+    {
+      "version_number": 27,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_7c72d53bc32c8191b57fda6a1a5f276c",
+      "source_commit": "b40d570862766dc7f767a136cc62cbe44f794a13",
+      "deployment_id": "appgdep_6a9d48998f208191861ed723e06b0e81"
+    },
+    {
+      "version_number": 26,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_f306e425fa4c81919b8dd176b7d6266a",
+      "source_commit": "e8edaf379689005c9ab92e235d7488a885fdc230",
+      "deployment_id": "appgdep_6a9d45fadee08191bf735eaa21b5a081"
+    },
+    {
+      "version_number": 25,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_784b4f2a65908191b13bf7dcaebf9199",
+      "source_commit": "d81525c2471cc0bc4c541c87e901c6412de1b428",
+      "deployment_id": "appgdep_6a9d422e71848191a12e52c59443a617"
+    },
+    {
+      "version_number": 24,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_26efb19e46708191ab05618878bf59af",
+      "source_commit": "e6d06a7eecd25cbfc8b3cf2d0903c3db3971d622",
+      "deployment_id": "appgdep_6a9d112289948191904a2e11d622e790"
+    },
+    {
+      "version_number": 23,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_7b34c4f08368819181afbe76d14438af",
+      "source_commit": "dddd3115b4bb8c782aa654079c179ea88e6952a3",
+      "deployment_id": "appgdep_6a9d0f96ed14819189de2f9b96e91b88"
+    },
+    {
+      "version_number": 22,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_c8c9372dd1488191af4e670ad25c1ac7",
+      "source_commit": "3f790e53fb76c2faf5af8e8f2750acc933400cb7",
+      "deployment_id": "appgdep_6a9d0d1426a88191a5ff919f4cb37c04"
+    },
+    {
+      "version_number": 21,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_a2c636b02f0c8191aeacce0f1ae74579",
+      "source_commit": "93b3452bf07b37813c345e35a5174685ae58470a",
+      "deployment_id": "appgdep_6a9d0877f3448191a44b6081de3a0169"
+    },
+    {
+      "version_number": 20,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_f55e0792a1b08191a96a99b272807015",
+      "source_commit": "5bd1c59026d9f2522558a0b112cc0d03b9f45430",
+      "deployment_id": "appgdep_6a9d0535d8a88191b86766d5c20f2297"
+    },
+    {
+      "version_number": 19,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_d9a55c7777e08191b49879b406e7b598",
+      "source_commit": "7516a1d8021d06d2ef7553a54c1a41245bc2d2a7",
+      "deployment_id": "appgdep_6a9d03981424819197e97d0394605773"
+    },
+    {
+      "version_number": 18,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_1a23aa69c75c819184cac758590ad5fe",
+      "source_commit": "ace461afea808b161d2be1e0dc4a237f0fdf19c4",
+      "deployment_id": "appgdep_6a9cfe3ccdc881919f9b665102200b97"
+    },
+    {
+      "version_number": 17,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_de8734f2077c8191b7f3b981363622a8",
+      "source_commit": "78117199b98f5860eec1513948dda524aba94939",
+      "deployment_id": "appgdep_6a9cfbe5492c81918d12bd53bbbf9b7d"
+    },
+    {
+      "version_number": 16,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_663d3f5bf944819191cdb31294c10c48",
+      "source_commit": "d386764f772d85d8034dbd7ea68a24bf13e57e55",
+      "deployment_id": "appgdep_6a9c4ef75dc4819187d3c5d9feabce9b"
+    },
+    {
+      "version_number": 15,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_26303c55b8c08191a4bf4c753ca9a1c3",
+      "source_commit": "a20e715748f5d8c226c2a99c079bf40abf69e833",
+      "deployment_id": "appgdep_6a9c4daa27a48191baf5dd03dfb6b0c0"
+    },
+    {
+      "version_number": 14,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_2b4634ec6bfc8191858276398352add5",
+      "source_commit": "28d70ea99a567774ae6c98ddefa609f66b454b25",
+      "deployment_id": "appgdep_6a9c4c0432ec8191956b34c1579c384d"
+    },
+    {
+      "version_number": 13,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_6e4257b4b7308191b098196a6f201f2b",
+      "source_commit": "118a3cdab35e347c6b4c3f0dfa0609a80635e35b",
+      "deployment_id": "appgdep_6a9c4abe10788191b6b7f68330a6996a"
+    },
+    {
+      "version_number": 12,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_cfb871245de8819188ebf0d6862de541",
+      "source_commit": "a1b4f76841f24a2750fe8fbfa352a4dad49499ed",
+      "deployment_id": "appgdep_6a9c496a99c481918382b53cc99ac349"
+    },
+    {
+      "version_number": 11,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_d531385a47008191b916fe032012b890",
+      "source_commit": "bea60efbedd7515c5af307d42762eb74ad282c04",
+      "deployment_id": "appgdep_6a9c46743110819184fde2a01cb4cdd6"
+    },
+    {
+      "version_number": 10,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_e98e4bb448408191bfeb84fe08148fbe",
+      "source_commit": "e5ce17b41de1719d01f515788e0ea78b18c868de",
+      "deployment_id": "appgdep_6a9c42a012bc8191accab52356956acd"
+    },
+    {
+      "version_number": 9,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_41a9d721d96881919cbbfdc5269cbbb9",
+      "source_commit": "7d28056f24dcb0e920b98b8f6dca07b5282e1c91",
+      "deployment_id": "appgdep_6a9c401681388191acf17fd069bbe0d8"
+    },
+    {
+      "version_number": 8,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_66a12aa1e91881918ce0327cc8b3dabc",
+      "source_commit": "03cf71d52ac4e4d248f3177a17cd9c2fce07c81c",
+      "deployment_id": "appgdep_6a9c0fb62840819191b5be7f7dfb1edf"
+    },
+    {
+      "version_number": 7,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_512e60cc26408191944c471e26d50895",
+      "source_commit": "04318ac12d209493ca3776bfec8cd93c85623ae1",
+      "deployment_id": "appgdep_6a9c0ec1eff881919fdf89427367d00a"
+    },
+    {
+      "version_number": 6,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_f69b3bf643a48191b7af040a370cd746",
+      "source_commit": "eef7574d6ae0e9e93673b581fda52a2b525cad31",
+      "deployment_id": "appgdep_6a9c0dc71e408191a93e509e23f33f1b"
+    },
+    {
+      "version_number": 5,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_5f3911a648bc8191a4766996f9a3df13",
+      "source_commit": "ed2d628bb45d2f3e413e3f55fad6c71e453f2810",
+      "deployment_id": "appgdep_6a9c0bfcae64819198347f80ae5d6dfc"
+    },
+    {
+      "version_number": 4,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_67879ad58b4481918fa778ea97f3936d",
+      "source_commit": "a4e7a04fe550b11dc1a96fb49955ea356f131098",
+      "deployment_id": "appgdep_6a9c0a64ca608191b9bed59eaf77401a"
+    },
+    {
+      "version_number": 3,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_d8697ca5ac508191a9db6b72f67c00a4",
+      "source_commit": "2ec10b6dfe0ab13c72b60875ed72d51f26a734d0",
+      "deployment_id": "appgdep_6a9c08ef813c8191864e6f1aa4d6ca43"
+    },
+    {
+      "version_number": 2,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_700e2309412c8191a9f5fd8310eb2b2d",
+      "source_commit": "26b89fec811d3d74cba05a2cd51d939da21b1f56",
+      "deployment_id": "appgdep_6a9c07051fc881919abcc86c02f448bb"
+    },
+    {
+      "version_number": 1,
+      "version_id": "appgprj_6a9c012b08308191acb3140c8e6c9033~appgver_535f2f3f9fd08191a4351d01e6db1983",
+      "source_commit": "fe3017569cde8f8f3cdded867a18c9992542fb43",
+      "deployment_id": "appgdep_6a9c01e06fc08191b0155efd3b620928"
+    }
+  ],
+  "exported_at": "2026-10-14",
+  "extraction_method": "Authenticated original Sites Git repository; no public-page reconstruction",
+  "original_tracked_files": 71,
+  "original_git_commits": 46,
+  "source_files_modified": false,
+  "published_sites_modified": false,
+  "student_data_exported": false
+}
